@@ -11,28 +11,27 @@
     <header>Welcome js Dome</header>
     <main>
         <article>
-            <h3 >Lorem ipsum dolor sit amet.</h3>
+            <h3 id="fristTitle" >Lorem ipsum dolor sit amet.</h3>
             <p>Lorem ipsum </p>
         </article>  
         <article>
-            <h3 >orem ipsum dolor sit amet.</h3>
+            <h3 id="secondTitle">orem ipsum dolor sit amet.</h3>
             <p>borem ipsum </p>
         </article>  
         <article>
-            <h3 >gorem ipsum dolor sit amet.</h3>
+            <h3 id="thirdTitle">gorem ipsum dolor sit amet.</h3>
             <p>aorem ipsum </p>
         </article>  
     </main>
     <script>
-       const article= document.getElementsByTagName("article");
-       for(const articl of article){
-        //    console.log(articl.innerHTML)
-       }
-       const blogsDetails=document.getElementsByTagName('p');
-       for(const p of blogsDetails){
-        //    console.log(p.innerHTML);
-           console.log(p.innerText);
-       }
+        const fristTitle=document.getElementById('fristTitle');
+        fristTitle.style.color="#fff";
+        fristTitle.style.fontSize="30px";
+        fristTitle.style.backgroundColor="green";
+        fristTitle.style.padding="10px";
+        fristTitle.style.textAlign="center";
+        fristTitle.innerText='update my title'
+
     </script>
 </body>
 </html>
