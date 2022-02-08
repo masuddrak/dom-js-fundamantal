@@ -9,7 +9,15 @@
 </head>
 <body>
     <header>Welcome js Dome</header>
-    <main>
+
+    <main id="blogList">
+        <ul id="list">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>sevices</li>
+            <li>blogs</li>
+        </ul>
         <article class="blogs">
             <h3 id="fristTitle" >Lorem ipsum dolor sit amet.</h3>
             <p>Lorem ipsum </p>
@@ -24,6 +32,26 @@
         </article>  
     </main>
     <script>
+
+        
+        // create a li
+        const li=document.createElement('li');
+        li.innerText='social media';
+        const list=document.getElementById('list');
+        list.appendChild(li);
+
+        // creat a blog list
+        const article=document.createElement('article');
+        article.classList.add('blogs');
+        article.innerHTML=`
+        <h3>hello word</h3>
+        <p>hello word</p>
+        `
+        const blogList=document.getElementById('blogList');
+        blogList.appendChild(article);
+
+
+// create style blogs
         const blogs=document.querySelectorAll('.blogs p');
         for(const blog of blogs){
             blog.style.backgroundColor='green';
@@ -32,7 +60,6 @@
             blog.style.color='#fff';
 
         }
-
     </script>
 </body>
 </html>
